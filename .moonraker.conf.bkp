@@ -104,3 +104,18 @@ managed_services = klipper
 info_tags = 
 	desc=Beacon Surface Scanner
 
+[update_manager octoeverywhere]
+type = git_repo
+channel = beta
+path = /home/mks/octoeverywhere
+origin = https://github.com/QuinnDamerell/OctoPrint-OctoEverywhere.git
+env = /home/mks/octoeverywhere-env/bin/python
+requirements = requirements.txt
+install_script = install.sh
+managed_services = 
+	octoeverywhere
+
+[announcements]
+subscriptions = 
+	octoeverywhere
+
